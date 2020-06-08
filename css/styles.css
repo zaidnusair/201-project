@@ -1,0 +1,13 @@
+body {
+  background-color: cadetblue;
+}
+h1 {
+  font-style: oblique;
+  color: crimson;
+  border: darkgray;
+}
+p {
+  background-color: darkmagenta;
+  color: black;
+  box-shadow: black;
+}
