@@ -1,8 +1,8 @@
 "use strict";
-//lab2
-// var sum = 0;
-//  var person = prompt("Hello, whats your name?");
-//  alert("Hello " + person + " my name is Zaid, welcome to my website!");
+lab2
+var sum = 0;
+ var person = prompt("Hello, whats your name?");
+ alert("Hello " + person + " my name is Zaid, welcome to my website!");
 
 // var q1 = prompt("Am i above 25 years old?", "answer with Y or N");
 // var Q1 = q1.toUpperCase();
@@ -78,93 +78,12 @@
 //     sum = sum + 1;
 //   }
 // }
-// drawings:
-// alert("|----|\nO    |\n/|\\   |\n/ \\   |"); //final
-// var o = alert("|----|\n      |\n      |\n      |"); //start
-// var x1 = alert("|----|\nO    |\n       |\n       |"); //1st
-// var x2 = alert("|----|\nO    |\n/     |\n      |"); //2nd
-// var x3 = alert("|----|\nO    |\n/|    |\n      |"); //3rd
-// var x4 = alert("|----|\nO    |\n/|\\   |\n     |"); //4rth
-// var x5 = alert("|----|\nO    |\n/|\\   |\n/     |"); //5th
-// var x6 = alert("|----|\nO    |\n/|\\   |\n/ \\   |"); //6th(final)
 
-// //var ans = ["L","U","M","I","N","U","S"]
+//lab3
 
-// //var x = alert("|----|\n      |\n      |\n      |");
-// // var game = prompt(
-// //   "A place you know. 1 word 7 letters. What is it?",
-// //   "insert letter"
-// //);
-// var game;
-// var x;
-// alert("|----|\nO    |\n/|\\   |\n/ \\   |\n lets play hangman!"); //final
-// for (var i = 0; i < 6; ) {
-//   var game = prompt(
-//     "A place you know. 1 word 7 letters. What is it?",
-//     "insert letter"
-//   );
-// if (game != "L" || "U" || "M" || "I" || "N" || "S") {
-//   alert("correct!");
-//   myFunction1();
-//   game;}
-//   if (game == "L") {
-//     alert("correct!");
-//     myFunction1(i);
-//     alert(myFunction1);
-//   } else if (game == "U") {
-//     alert("correct!");
-//     myFunction1(i);
-//     alert(myFunction1);
-//   } else if (game == "M") {
-//     alert("correct!");
-//     myFunction1(i);
-//   } else if (game == "I") {
-//     alert("correct!");
-//     myFunction1(i);
-//   } else if (game == "N") {
-//     alert("correct!");
-//     myFunction1(i);
-//   } else if (game == "S") {
-//     alert("correct!");
-//     myFunction1(i);
-//   } else {
-//     alert("incorrect");
-//     i = i++;
-//     myFunction1(i);
-//     alert(myFunction1);
-//   }
-// }
-
-// function myFunction1(i) {
-//   if ((i = 0)) {
-//     //x = "|----|\n      |\n      |\n      |";
-//     x = o;
-//   } else if ((i = 1)) {
-//     //x = "|----|\nO    |\n       |\n       |";
-//     x = x1;
-//   } else if ((i = 2)) {
-//     //x = "|----|\nO    |\n/     |\n      |";
-//     x = x2;
-//   } else if ((i = 3)) {
-//     //x = "|----|\nO    |\n/|    |\n      |";
-//     x = x3;
-//   } else if ((i = 4)) {
-//     //x = "|----|\nO    |\n/|\\   |\n     |";
-//     x = x4;
-//   } else if ((i = 5)) {
-//     //x = "|----|\nO    |\n/|\\   |\n/     |";
-//     x = x5;
-//   } else if ((i = 6)) {
-//     //x = "|----|\nO    |\n/|\\   |\n/ \\   |";
-//     x = x6;
-//   }
-
-//   return x;
-// }
-
-// myFunction1();
-// var end = alert("it was nice to meet you " + person + " ,enjoy the website.");
-// alert(sum);
+myFunction1();
+var end = alert("it was nice to meet you " + person + " ,enjoy the website.");
+alert(sum);
 
 var person = prompt("Hello, whats your name?");
 alert("Hello " + person + " my name is Zaid, welcome to my website!");
@@ -175,29 +94,22 @@ var arrayquestion = [
   "Is the highest degree i have is a bachelors degree?",
   "do i live in Irbid?,answer with Y or N",
   "did i go to University of JUST?,answer with Y or N",
-  "Can i play an instrument?,answer with Y or N"
+  "Can i play an instrument?,answer with Y or N",
 ];
 for (var i = 0; i < arrayquestion.length; i++) {
-
   var userInput = prompt(arrayquestion[i].toUpperCase());
   condition(userInput);
   function condition(userInput) {
     //userInput = x
-    while (
-      userInput != "Y" &&
-      userInput != "N"
-    ) {
+    while (userInput != "Y" && userInput != "N") {
       userInput = prompt(arrayquestion[i]).toUpperCase();
     }
     if (userInput == "Y") {
       sum++;
-
     }
     return userInput;
-
   }
 }
-
 
 function question6() {
   var q6 = prompt("how many strings does a guitar have?", "insert a number ");
@@ -205,18 +117,169 @@ function question6() {
   for (i = 0; i <= 3; i++) {
     if (q6 > 6) {
       alert("lower");
-      var q6 = prompt("how many strings does a guitar have?", "insert a number ");
+      var q6 = prompt(
+        "how many strings does a guitar have?",
+        "insert a number "
+      );
     } else if (q6 < 6) {
       alert("higher");
-      var q6 = prompt("how many strings does a guitar have?", "insert a number ");
+      var q6 = prompt(
+        "how many strings does a guitar have?",
+        "insert a number "
+      );
     } else if (q6 == 6) {
       alert("correct! a guitar has 6 strings");
       sum = sum + 1;
       break;
     }
   }
-
-
 }
 question6();
-alert(" your grade is " + sum + " out of 7")
+alert(" your grade is " + sum + " out of 7");
+
+// drawings:
+// alert("|----|\nO    |\n/|\\   |\n/ \\   |"); //final
+// function drawing(x, x1, x2, x3, x4, x5, x6, o) {
+//   var o = alert("|----|\n      |\n      |\n      |"); //start
+//   var x1 = alert("|----|\nO    |\n       |\n       |"); //1st
+//   var x2 = alert("|----|\nO    |\n/     |\n      |"); //2nd
+//   var x3 = alert("|----|\nO    |\n/|    |\n      |"); //3rd
+//   var x4 = alert("|----|\nO    |\n/|\\   |\n     |"); //4rth
+//   var x5 = alert("|----|\nO    |\n/|\\   |\n/     |"); //5th
+//   var x6 = alert("|----|\nO    |\n/|\\   |\n/ \\   |"); //6th(final)
+// }
+// var ans = ["L", "U", "M", "I", "N", "U", "S"];
+
+// var x = "lets play hangman";
+// function hangman() {
+//   for (var i = 0; i < 7; ) {
+//     var x;
+//     if ((i = 0)) {
+//       x = alert("|----|\n      |\n      |\n      |");
+//     } else if ((i = 1)) {
+//       x = alert("|----|\nO    |\n       |\n       |");
+//     } else if ((i = 2)) {
+//       x = alert("|----|\nO    |\n/     |\n      |");
+//     } else if ((i = 3)) {
+//       x = alert("|----|\nO    |\n/|    |\n      |");
+//     } else if ((i = 4)) {
+//       x = alert("|----|\nO    |\n/|\\   |\n     |");
+//     } else if ((i = 5)) {
+//       x = alert("|----|\nO    |\n/|\\   |\n/     |");
+//     } else if ((i = 6)) {
+//       x = alert("|----|\nO    |\n/|\\   |\n/ \\   |");
+//     }
+//   }
+//   return x;
+// }
+
+// hangman();
+
+// function q7(ans) {
+//   // hungman();
+//   if (
+//     ans == "l" ||
+//     ans == "u" ||
+//     ans == "m" ||
+//     ans == "i" ||
+//     ans == "n" ||
+//     ans == "s"
+//   ) {
+//     alert("correct!");
+//     x;
+//   } else {
+//     alert(incorrect);
+//     x;
+//     i++;
+//   }
+//   return ans;
+// }
+
+
+// for (var i= 0 ; i > 7){
+//   hungman();
+//   ans()
+//   x
+
+// }
+
+  // "l" && "u" && "m" && "i" && "n" && "s"
+  // l || u || m || i || n || s  
+  // "_ _ _ _ _ _ _"
+  var v 
+var p = 7
+
+var q7= alert("lets play hangman!\n1 word, 6 letters. its a place you know","guess a letter").toLowerCase()
+
+ask();
+function ask(){
+  if (q7 == "l" ||
+q7 == "u" ||
+q7 == "m" ||
+q7 == "i" ||
+q7 == "n" ||
+q7 == "s"){
+
+
+  
+  p = p-1
+  progress()
+  alert("correct", x)
+
+  CORRECT()
+ 
+}else{
+  y=y+1
+  INCORRECT()
+}
+}
+
+function CORRECT(){
+  do {
+    ask();
+
+  }while (0 < p , p < 8  );
+
+  }
+
+function progress(){
+  for ( 0 < p , p < 7  ) {
+  x = (p , " letters left")
+  return x
+  }
+
+
+   
+}
+
+function INCORRECT(){
+  for (var y= 0 ; y <=6 ) {
+    drawing(y)
+    alert(v)
+  }
+
+}
+
+function drawing(){
+  
+  if (y=1){
+    v = alert("|----|\nO    |\n       |\n       |");} //1st
+    else if(y=2){
+    v = alert("|----|\nO    |\n/     |\n      |");} //2nd
+    else if(y=3){
+    v = alert("|----|\nO    |\n/|    |\n      |");} //3rd
+    else if (y=4){
+    v = alert("|----|\nO    |\n/|\\   |\n     |");}//4rth
+    else if (y=5){
+    v = alert("|----|\nO    |\n/|\\   |\n/     |");} //5th
+    else if (y=6){
+    v = alert("|----|\nO    |\n/|\\   |\n/ \\   |");} //6th
+
+return v
+}
+
+if (x<1){
+  alert("you won, the answer is lumnius")
+}else if(y=6){
+  alert("you lost, the answer is luminus")
+}
