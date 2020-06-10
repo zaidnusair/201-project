@@ -1,4 +1,5 @@
 "use strict";
+//lab2
 var sum = 0;
 var person = prompt("Hello, whats your name?");
 alert("Hello " + person + " my name is Zaid, welcome to my website!");
@@ -61,6 +62,8 @@ if (Q5 == "Y") {
   //console.log("incorrect, i play the guitar ")
   alert("incorrect, i play the guitar ");
 }
+//lab3
+
 var q6 = prompt("how many strings does a guitar have?", "insert a number ");
 var i;
 for (i = 0; i < 3; i++) {
@@ -75,15 +78,15 @@ for (i = 0; i < 3; i++) {
     sum = sum + 1;
   }
 }
-
+// drawings:
 // alert("|----|\nO    |\n/|\\   |\n/ \\   |"); //final
-// var o = alert("|----|\n      |\n      |\n      |"); //start
-// var x1 = alert("|----|\nO    |\n       |\n       |"); //1st
-// var x2 = alert("|----|\nO    |\n/     |\n      |"); //2nd
-// var x3 = alert("|----|\nO    |\n/|    |\n      |"); //3rd
-// var x4 = alert("|----|\nO    |\n/|\\   |\n     |"); //4rth
-// var x5 = alert("|----|\nO    |\n/|\\   |\n/     |"); //5th
-// var x6 = alert("|----|\nO    |\n/|\\   |\n/ \\   |"); //6th
+var o = alert("|----|\n      |\n      |\n      |"); //start
+var x1 = alert("|----|\nO    |\n       |\n       |"); //1st
+var x2 = alert("|----|\nO    |\n/     |\n      |"); //2nd
+var x3 = alert("|----|\nO    |\n/|    |\n      |"); //3rd
+var x4 = alert("|----|\nO    |\n/|\\   |\n     |"); //4rth
+var x5 = alert("|----|\nO    |\n/|\\   |\n/     |"); //5th
+var x6 = alert("|----|\nO    |\n/|\\   |\n/ \\   |"); //6th(final)
 
 //var ans = ["L","U","M","I","N","U","S"]
 
@@ -106,49 +109,57 @@ for (var i = 0; i < 6; ) {
   //   game;}
   if (game == "L") {
     alert("correct!");
-    myFunction1();
+    myFunction1(i);
+    alert(myFunction1);
   } else if (game == "U") {
     alert("correct!");
-    myFunction1();
+    myFunction1(i);
+    alert(myFunction1);
   } else if (game == "M") {
     alert("correct!");
-    myFunction1();
+    myFunction1(i);
   } else if (game == "I") {
     alert("correct!");
-    myFunction1();
+    myFunction1(i);
   } else if (game == "N") {
     alert("correct!");
-    myFunction1();
+    myFunction1(i);
   } else if (game == "S") {
     alert("correct!");
-    myFunction1();
-  } else if (game != "L" || "U" || "M" || "I" || "N" || "S") {
+    myFunction1(i);
+  } else {
     alert("incorrect");
     i = i++;
-    myFunction1();
+    myFunction1(i);
+    alert(myFunction1);
   }
 }
 
-function myFunction1() {
-  var ;
+function myFunction1(i) {
   if ((i = 0)) {
-    var x = "|----|\n      |\n      |\n      |";
+    //x = "|----|\n      |\n      |\n      |";
+    x = o;
   } else if ((i = 1)) {
-    var x = "|----|\nO    |\n       |\n       |";
+    //x = "|----|\nO    |\n       |\n       |";
+    x = x1;
   } else if ((i = 2)) {
-    var x = "|----|\nO    |\n/     |\n      |";
+    //x = "|----|\nO    |\n/     |\n      |";
+    x = x2;
   } else if ((i = 3)) {
-    var x = "|----|\nO    |\n/|    |\n      |";
+    //x = "|----|\nO    |\n/|    |\n      |";
+    x = x3;
   } else if ((i = 4)) {
-    var x = "|----|\nO    |\n/|\\   |\n     |";
+    //x = "|----|\nO    |\n/|\\   |\n     |";
+    x = x4;
   } else if ((i = 5)) {
-    var x = "|----|\nO    |\n/|\\   |\n/     |";
+    //x = "|----|\nO    |\n/|\\   |\n/     |";
+    x = x5;
   } else if ((i = 6)) {
-    var x = "|----|\nO    |\n/|\\   |\n/ \\   |";
+    //x = "|----|\nO    |\n/|\\   |\n/ \\   |";
+    x = x6;
   }
-  
+
   return x;
-  
 }
 
 myFunction1();
