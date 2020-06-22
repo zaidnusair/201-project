@@ -11,10 +11,10 @@ nav ul {
   background-color: rgb(218, 218, 217);
 }
 
-ul li {
+nav ul li {
   display: inline-block;
 }
-ul li a {
+nav ul li a {
   text-decoration: rgb(240, 100, 73);
 }
 section {
